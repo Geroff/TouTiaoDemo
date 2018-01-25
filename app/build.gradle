@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.lgf.toutiao"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 配置应用进行 Dalvik 可执行文件分包，如果 minSdkVersion 设置为 21 或更高值，则只需要此步骤，否则还需其他步骤，例如添加依赖并继承 MultiDexApplication
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // 如果minSdkVersion 设置为 20 或更低值，则需要添加如下依赖
+    implementation 'com.android.support:multidex:1.0.2'
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

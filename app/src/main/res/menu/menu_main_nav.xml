@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_change_theme"
+        android:icon="@drawable/ic_nav_night"
+        android:title="@string/nav_change_theme" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_nav_setting"
+        android:title="@string/nav_setting" />
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_nav_share"
+        android:title="@string/nav_share" />
+
+</menu>

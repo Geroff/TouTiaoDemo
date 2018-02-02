@@ -41,6 +41,9 @@ dependencies {
     // 调试app框架stetho
     implementation 'com.facebook.stetho:stetho:1.5.0'
 
+    // 高亮功能提示效果
+    compile 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

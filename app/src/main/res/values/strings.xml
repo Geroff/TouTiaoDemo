@@ -15,4 +15,8 @@
     <!--toolbar-->
     <string name="toolbar_search">搜索</string>
 
+    <!--toolbar打开侧栏开关-->
+    <string name="open_navigation">打开侧栏</string>
+    <string name="close_navigation">关闭侧栏</string>
+
 </resources>
